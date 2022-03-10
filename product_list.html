@@ -1,0 +1,267 @@
+<html>
+    <head>
+        <title>List of Items</title>
+        <style type="text/css">
+            *{
+                margin:0;
+                padding:0;
+            }
+            @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;700&display=swap');
+            .header{
+                height: 10vh;
+                background-color: red;
+                position: relative;
+            }
+            .header .header-logo{
+                font-size: 50px;
+                text-align: center;
+                background-color: #ffffff;
+                border-radius: 50%;
+                height: 60px;
+                width: 60px;
+                position: absolute;
+                margin-left: 50px;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .links{
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .login{
+                text-decoration: none;
+                color: white;
+                font-family: 'Lato', sans-serif;
+            }
+            .register{
+                border: 1px solid white;
+                color: white;
+                text-decoration: none;
+                margin-left:20px;
+                font-family: 'Lato', sans-serif;
+                padding: 10px;
+            }
+            .left{
+                box-shadow: 2px 2px 14px #000000;
+                width: 20%;
+                height: 68vh;
+                margin-top: 20px;
+                margin-left: 4%;
+                display: inline-block;
+                outline: hidden;
+            }
+            .top-heading, .left-heading{
+                margin-left: 20px;
+                margin-top: 20px;
+                font-family: 'Lato', sans-serif;
+            }
+            .sub-heading{
+                margin-left: 20px;
+                margin-top: 15px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            .dropdown{
+                border:none;
+                margin-left: 20px;
+                margin-top: 10px;
+                border: 1px grey solid;
+                padding:10px;
+                width: 80%;
+            }
+            .right{
+                display: inline-block;
+                vertical-align: top;
+            }
+            .card{
+                margin-left: 30px;
+                margin-top: 20px;
+                box-shadow: 2px 2px 14px #000000;
+                width:70vw;
+            }
+            .seg2{
+                border-top: 1px solid grey;
+                margin-top:10px;
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+            .checkboxes{
+                display: block;
+                margin-left: 20px;
+                margin-top: 5px;
+            }
+            .food-img{
+                height: 120px;
+                width: 120px;
+                margin-left: 20px;
+                margin-top: 20px;
+                border-radius: 20px;
+            }
+            .seg1_internal{
+                display: inline-block;
+                vertical-align: top;
+            }
+            .name{
+                margin-left: 20px;
+                margin-top: 25px;
+                font-size: 50px;
+                font-family: 'Lato', sans-serif;
+                font-weight:100;
+            }
+            .shop{
+                margin-left: 20px;
+                margin-top: 3px;
+                font-size: 15px;
+                font-family: 'Lato', sans-serif;
+                font-weight:bold;
+            }
+            .address{
+                margin-left: 20px;
+                margin-top: 8px;
+                font-size: 15px;
+                font-family: 'Lato', sans-serif;
+                font-weight:100;
+                color: grey;
+            }
+            .cuisine-info, .cost-info{
+                display: block;
+            }
+            .padding-space{
+                padding-left: 40px;
+            }
+            .seg2_internal{
+                padding-top:10px;
+                padding-bottom:10px;
+                font-family: 'Lato', sans-serif;
+                font-weight:100;
+                color: rgb(99, 82, 82);
+                font-size: 15px;
+            }
+            .footer{
+                border-top: 1px black solid;
+                margin-top: 20px;
+                margin-left: 4%;
+                margin-right: 4%;
+            }
+            .credits{
+                margin-top: 20px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-logo">
+                <b>e!</b>
+            </div>
+            <div class="links">
+                <a href="#" class="login">Login</a>
+                <a href="#" class="register">Register</a>
+            </div>
+            </div>
+        </div>
+        <h1 class="top-heading">Breakfast Items in Shillong</h1>
+        <div class="main">
+            <div class="left">
+                <h1 class="left-heading">Filters</h1>
+                <p class="sub-heading">Select Location</p>
+                <select class="dropdown">
+                    <option>Select Location</option>
+                </select>
+                <p class="sub-heading">Cuisine</p>
+                <div class="checkboxes">
+                    <input type="checkbox">
+                    <label>North Indian</label>
+                </div>
+                <div class="checkboxes">
+                    <input type="checkbox">
+                    <label>South Indian</label>
+                </div>
+                <div class="checkboxes">
+                    <input type="checkbox">
+                    <label>American</label>
+                </div>
+                <div class="checkboxes">
+                    <input type="checkbox">
+                    <label>Fast Food</label>
+                </div>
+                <div class="checkboxes">
+                    <input type="checkbox">
+                    <label>Street Food</label>
+                </div>
+                <p class="sub-heading">Cost for Two</p>
+                <div class="checkboxes">
+                    <input type="radio" name="cost">
+                    <label>Less than 500</label>
+                </div>
+                <div class="checkboxes">
+                    <input type="radio" name="cost">
+                    <label>500 to 1000</label>
+                </div>
+                <div class="checkboxes">
+                    <input type="radio" name="cost">
+                    <label>1000 to 1500</label>
+                </div>
+                <p class="sub-heading">Sort</p>
+                <div class="checkboxes">
+                    <input type="radio" name="price">
+                    <label>Price Low to High</label>
+                </div>
+                <div class="checkboxes">
+                    <input type="radio" name="price">
+                    <label>Price High to Low</label>
+                </div>
+            </div>
+            <div class="right">
+                <div class="card">
+                    <div class="seg1">
+                        <img class="food-img" src="momos.jpeg"/>
+                        <div class="seg1_internal">
+                            <h3 class="name">Momos</h3>
+                            <h4 class="shop">Shillong MOMO</h4>
+                            <p class="address">Bawri Mansion, 'C' Row, No.-9, Dhankheti, Shillong, Meghalaya 793001</p>
+                        </div>
+                    </div>
+                    <div class="seg2">
+                            <table>
+                            <tr>
+                                <td class="seg2_internal"><span class="cuisine">CUISINES</span></td>
+                                <td class="padding-space seg2_internal"><span class="cuisine_name">Dumpling</span></td>
+                            </tr>
+                            <tr>
+                                <td class="seg2_internal"><span class="cost">COST FOR TWO</span></td>
+                                <td class="padding-space seg2_internal"><span class="cost_name">&#8377;250</span></td>
+                            </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="seg1">
+                            <img class="food-img" src="chopsuey.jpeg"/>
+                            <div class="seg1_internal">
+                                <h3 class="name">American Chop Suey</h3>
+                                <h4 class="shop">Hongkong Restaurant</h4>
+                                <p class="address">GS Rd, Police Bazar, Shillong, Meghalaya 793001</p>
+                            </div>
+                        </div>
+                        <div class="seg2">
+                                <table>
+                                <tr>
+                                    <td class="seg2_internal"><span class="cuisine">CUISINES</span></td>
+                                    <td class="padding-space seg2_internal"><span class="cuisine_name">American</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="seg2_internal"><span class="cost">COST FOR TWO</span></td>
+                                    <td class="padding-space seg2_internal"><span class="cost_name">&#8377;500</span></td>
+                                </tr>
+                                </table>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p class="credits">Webpage designed by Subhraneel Chowdhury</p>
+            </div>
+    </body>
+</html>
